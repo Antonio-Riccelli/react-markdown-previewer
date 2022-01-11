@@ -4,6 +4,8 @@ Building this as the second project for the [freeCodeCamp.org Front End Developm
 
 It takes in text input by the user following markdown syntax and renders it in actual processed HTML. 
 
+![demo](./demo6.gif)
+
 ## Technologies
 
 - React
