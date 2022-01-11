@@ -23,6 +23,7 @@ setPreviewerText(editorText);
 
   return (
     <div className="App">
+    <h1>Markdown Previewer</h1>
     <Editor value={initialRendering} onChange={handleChange} />
     <Previewer text={previewerText} />
     </div>
