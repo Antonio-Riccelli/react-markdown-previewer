@@ -1,23 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import Editor from './Components/Editor/index';
+import Previewer from './Components/Previewer/index';
+
+const initialRendering = {
+  "h1": '<h1>Hello There</h1>'
+}
 
 function App() {
+// const []
+
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Editor value={initialRendering} />
+    <Previewer />
     </div>
   );
 }
