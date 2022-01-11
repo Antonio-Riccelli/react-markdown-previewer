@@ -11,9 +11,9 @@ export default function Previewer(props) {
 let finalString =  marked.parse(props.text)
 
     return (
-        <section id="preview-wrapper">
+        <section id="preview-wrapper" >
         <h1>Previewer</h1>
-            <div id="preview" dangerouslySetInnerHTML={{__html: finalString}}>
+            <div id="preview" dangerouslySetInnerHTML={{__html: finalString}} >
             </div>
         </section>
     )

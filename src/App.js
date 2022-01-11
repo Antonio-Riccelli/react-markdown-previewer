@@ -3,7 +3,10 @@ import './App.css';
 import Editor from './Components/Editor/index';
 import Previewer from './Components/Previewer/index';
 
-const initialRendering =  '# Hello There'
+const initialRendering = `# Hello There
+## Hello
+
+`
 
 
 function App() {
