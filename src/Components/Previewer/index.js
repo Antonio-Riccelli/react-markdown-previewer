@@ -12,7 +12,7 @@ let finalString =  marked.parse(props.text)
 
     return (
         <section id="preview-wrapper" >
-        <h1>Previewer</h1>
+        <h2 id="previewer-title">Previewer</h2>
             <div id="preview" dangerouslySetInnerHTML={{__html: finalString}} >
             </div>
         </section>
