@@ -24,3 +24,5 @@ It takes in text input by the user following markdown syntax and renders it in a
   - There are essentially two components: the editor and the previewer, although they are both rendered in the App component which gets, in turn, rendered on the HTML page.
   - I had to import the [Marked library](https://marked.js.org/) in order to parse the input text and also use the [dangerouslySetInnerHTML](https://reactjs.org/docs/dom-elements.html#dangerouslysetinnerhtml) attribute, which I wasn't familiar with.
   - Marked.JS recommends using a HTML sanitiser. To this purpose, I have imported DOMpurifier, but I have not implemented it yet.
+- __14/01/2022__
+  - App is functional and deployed on Netlify. I have tweaked the styling to make it more presentable, but did not go for anything sophisticated as I thought it would be unnecessary. Demo gif also updated.
