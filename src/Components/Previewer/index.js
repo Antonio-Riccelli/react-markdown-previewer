@@ -1,6 +1,7 @@
 import React from 'react';
 import './index.css';
 import { marked } from 'marked';
+import dompurify from "dompurify";
 
 marked.setOptions({
     breaks: true,
@@ -8,7 +9,7 @@ marked.setOptions({
 
 export default function Previewer(props) {
 
-let finalString =  marked.parse(props.text)
+let finalString =  dompurify.sanitize(marked.parse(props.text));
 
     return (
         <section id="preview-wrapper" >
